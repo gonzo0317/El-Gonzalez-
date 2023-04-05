@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <title>EL GONZALEZ TACO SHOP</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	   <style type="text/css">
+	   body,td,th {
+    color: #070707;
+}
+h1 {
+    color: #0A0A0A;
+}
+h2 {
+    color: #0E0E0E;
+}
+h3 {
+    color: #131212;
+}
+       </style>
+<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+
+</head> 
+	
+<body>
+
+
+<!----- HEADER START--->   
+<header id="header">
+<div class="content">
+<div id="logo"><a href=""> El GONZALEZ  </a></div>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#slide1" class="active" title="Next Section" >Menu</a></li>
+		<li><a href="#slide2" title="Next Section">Specials</a></li>
+		<li><a href="#slide3" title="Next Section">Carry out</a></li>
+		<li><a  href="#slide4" title="Next Section">Contact</a></li>
+		
+	</ul>
+</nav>
+</div>
+</header>	
+<!----- HEADER END--->   
+
+<!----- SLIDES START --->   	
+	<div id="slide1">
+		<div class="content">	
+            <h2>TACO FOR YOU </h2>
+		    <h1>TACO FOR ME </h1>
+		   
+		     <h3>ORDER NOW </h3>
+           <div id="ribbon"></div>
+			<h1>MENU</h1>
+	      <table width="200" border="1">
+  <tbody>
+    <tr>
+      <td>&nbsp;Tacos</td>
+      <td>&nbsp;Burritos&nbsp;</td>
+      <td>&nbsp;The&nbsp; Specials&nbsp;</td>
+      <td>Meals&nbsp;</td>
+      <td>&nbsp;Drinks&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Carne asada</td>
+      <td>&nbsp;Carne asada</td>
+      <td>&nbsp;Huevos rancheros</td>
+      <td>&nbsp;Burrito and two tacos</td>
+      <td>&nbsp;Horchata</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Al pastor</td>
+      <td>&nbsp;Al pastor</td>
+      <td>&nbsp;Tampiquena</td>
+      <td>&nbsp;Enchildas with tamale</td>
+      <td>&nbsp;Jamaica</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Birria&nbsp;</td>
+      <td>&nbsp;California</td>
+      <td>&nbsp; &nbsp;Carne asada fries</td>
+      <td>&nbsp;Caldo with tacos</td>
+      <td>&nbsp;tamarindo</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Cabesa&nbsp;</td>
+      <td>&nbsp;Campechana</td>
+      <td>&nbsp;Carne Asada chips</td>
+      <td>&nbsp;Mollete con Huevos&nbsp;</td>
+      <td>&nbsp;Jaritos</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Lengua</td>
+      <td>&nbsp;Bean and cheese</td>
+      <td><p>&nbsp;Chilaquiles&nbsp;</p>
+        <p>Verdes.</p>
+        <p>Rojas&nbsp;</p></td>
+      <td>Chilaquiles and Mollete&nbsp;</td>
+      <td>&nbsp;Champurado</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Tripas</td>
+      <td>&nbsp;Mega grande</td>
+      <td>&nbsp;Enchiladas</td>
+      <td>&nbsp;Tacos and Burrito</td>
+      <td>&nbsp;Margaritas</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Campechana</td>
+      <td>&nbsp;Chroizo con papa</td>
+      <td>&nbsp;Caldo de Birria</td>
+      <td>&nbsp;Caldo and mollete&nbsp;</td>
+      <td>&nbsp;Corona</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Bean&nbsp;</td>
+      <td>&nbsp;Surf and turf</td>
+      <td>&nbsp;Molletes</td>
+      <td>&nbsp;Ceviche with taco</td>
+      <td>&nbsp;Modelo</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Chroizo</td>
+      <td>&nbsp;Adobada </td>
+      <td>&nbsp;Caldo de Res&nbsp;&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;Fountain drinks__</td>
+    </tr>
+  </tbody>
+</table>
+	      
+      </div> 
+    </div> 
+
+<div id="slide2">
+		<div class="content" >
+            <div class="quotes_container">
+		    <table width="200" border="1">
+				<h1>CHECK  OUT OUR SPECIALS</h1>
+  <tbody>
+    <tr>
+      <td>&nbsp;Specials</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Carne asda fries&nbsp; &nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Burrito california&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Tampiquena</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Caldo de birria&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;Caldo de rez</td>
+    </tr>
+  </tbody>
+</table>
+
+	
+	
+   <div id="slide3">
+		<div class="content">
+			   <div class="quotes_container">
+		       <h3 class="quotes">“I truly believe that belive that this is the best mexican food I have had in my life”  </h3>
+		       <h4 class="author_name_white">Pancho Villa  </h4>
+		    </div> 
+		</div> 
+    </div> 
+		<div id="copyright"><a href="http://www.1stwebdesigner.com/">Copyright 1stwebdesigner.com </a></div>  
+		</div> 
+		
+
+    </div> 
+	
+<!----- SLIDES END --->
+
+</body>
+</html>
